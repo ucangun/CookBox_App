@@ -1,12 +1,14 @@
 import React from "react";
-import Container from "../components/style/ContainerStyle";
 import Navbar from "../components/Navbar";
+import HomeContainer from "../components/style/ContainerStyle";
+import Header from "../components/Header";
 
 const Home = () => {
   return (
-    <Container>
+    <HomeContainer>
       <Navbar />
-    </Container>
+      <Header />
+    </HomeContainer>
   );
 };
 
