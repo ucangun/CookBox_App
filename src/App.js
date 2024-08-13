@@ -1,9 +1,12 @@
+import RecipesProvider from "./contexts/RecipesProvider";
 import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
     <div>
-      <AppRouter />
+      <RecipesProvider>
+        <AppRouter />
+      </RecipesProvider>
     </div>
   );
 }
