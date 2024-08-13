@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const WelcomeHeader = styled.div`
-  margin: 15rem auto;
+  margin: 15rem auto 3rem;
   padding: 1rem 0.5rem;
   width: 80%;
   color: #fff;
