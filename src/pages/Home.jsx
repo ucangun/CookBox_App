@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import HomeContainer from "../components/style/ContainerStyle";
+import Container from "../components/style/ContainerStyle";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
@@ -8,11 +8,11 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <HomeContainer>
+    <Container>
       <Navbar />
       <Header />
       <Button onClick={() => navigate("/login")}>Get Started !</Button>
-    </HomeContainer>
+    </Container>
   );
 };
 

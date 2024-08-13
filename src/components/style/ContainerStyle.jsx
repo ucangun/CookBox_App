@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import HomepageImg from "../../assets/images/Homepage.jpg";
 
-const HomeContainer = styled.div`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -10,4 +10,4 @@ const HomeContainer = styled.div`
     url(${HomepageImg}) no-repeat center center/cover;
 `;
 
-export default HomeContainer;
+export default Container;
