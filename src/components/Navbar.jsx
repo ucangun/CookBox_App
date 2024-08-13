@@ -11,8 +11,9 @@ const Navbar = () => {
     <Nav>
       <Logo src={logo} alt="logo" onClick={() => navigate("/")} />
       <Navlink>
-        <p onClick={() => navigate("/about")}>About</p>
+        <p onClick={() => navigate("/")}>Home</p>
         <p onClick={() => navigate("/search")}>Search</p>
+        <p onClick={() => navigate("/about")}>About</p>
         <Button secondary onClick={() => navigate("/login")}>
           Login
         </Button>
