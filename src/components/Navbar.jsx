@@ -1,4 +1,3 @@
-import React from "react";
 import Nav, { Navlink } from "./style/NavbarStyle";
 import Logo from "./style/LogoStyle";
 import { useNavigate } from "react-router-dom";
