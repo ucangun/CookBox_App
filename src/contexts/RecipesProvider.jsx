@@ -5,18 +5,15 @@ export const RecipesContext = createContext();
 
 const APP_ID = "633135cc";
 const APP_KEY = "4e352366e820300289821caacf64d308";
-const BASE_URL = "https://api.edamam.com/search?";
 
 const RecipesProvider = ({ children }) => {
   const [recipes, setRecipes] = useState([]);
   const [query, setQuery] = useState("");
   const [mealType, setMealType] = useState("");
 
-  const url = `${BASE_URL}&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}${
-    mealType === "" ? "" : `&mealType=${mealType}`
-  }`;
-
   const getRecipes = async () => {
+    const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${mealType}`;
+
     const { data } = await axios.get(url);
     setRecipes(data.hits);
     console.log(data.hits);
@@ -24,7 +21,11 @@ const RecipesProvider = ({ children }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    getRecipes();
+    if (!query && !mealType) {
+      alert("Please enter a recipe name and select a meal category");
+    } else {
+      getRecipes();
+    }
   };
 
   return (

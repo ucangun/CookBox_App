@@ -10,7 +10,7 @@ const SearchBox = () => {
   const { query, setQuery, mealType, setMealType, handleSubmit } =
     useContext(RecipesContext);
   return (
-    <SearchContainer onSubmit={() => handleSubmit()}>
+    <SearchContainer>
       <SearchInput
         type="text"
         placeholder="Search recipes"
@@ -21,7 +21,7 @@ const SearchBox = () => {
         value={mealType}
         onChange={(e) => setMealType(e.target.value)}
       >
-        <option value="">Search Category</option>
+        {/* <option value="">Search Category</option> */}
         <option value="breakfast">Breakfast</option>
         <option value="lunch">Lunch</option>
         <option value="dinner">Dinner</option>
@@ -29,7 +29,9 @@ const SearchBox = () => {
         <option value="brunch">Brunch</option>
         <option value="teatime">TeaTime</option>
       </SearchSelect>
-      <Button secondary>Search</Button>
+      <Button secondary onClick={(e) => handleSubmit(e)}>
+        Search
+      </Button>
     </SearchContainer>
   );
 };
