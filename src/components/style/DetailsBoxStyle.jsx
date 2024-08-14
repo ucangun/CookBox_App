@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const DetailsContainer = styled.div`
+  margin: 2rem 0;
   align-self: center;
 
   width: 95%;
@@ -13,6 +14,11 @@ const DetailsContainer = styled.div`
 
   display: flex;
   gap: 5rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const IngInfo = styled.div`
@@ -20,6 +26,11 @@ export const IngInfo = styled.div`
   flex-direction: column;
   align-items: start;
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const IngImage = styled.img`
@@ -28,6 +39,11 @@ export const IngImage = styled.img`
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 768px) {
+    width: 90%;
+    height: auto;
+  }
 `;
 
 export const IngSpanWrapper = styled.div`
@@ -35,6 +51,11 @@ export const IngSpanWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin: 1rem 0;
+  }
 `;
 
 export const IngSpan = styled.span`
@@ -49,6 +70,11 @@ export const IngDetails = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const IngBody = styled.div`
@@ -65,6 +91,10 @@ export const IngBody = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const IngNutri = styled.div`
@@ -72,6 +102,10 @@ export const IngNutri = styled.div`
   flex-direction: column;
   padding: 0.2rem 1.2rem;
   gap: 0.3rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default DetailsContainer;
