@@ -3,9 +3,12 @@ import Logo from "./style/LogoStyle";
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/images/Logo.png";
 import Button from "./Button";
+import { useContext } from "react";
+import { AuthContext } from "../contexts/AuthProvider";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const { isAuthenticated } = useContext(AuthContext);
 
   return (
     <Nav>
@@ -39,7 +42,7 @@ const Navbar = () => {
           About
         </NavLink>
         <Button secondary="true" onClick={() => navigate("/login")}>
-          Login
+          {isAuthenticated ? "Logout" : "Login"}
         </Button>
       </Navlinks>
     </Nav>

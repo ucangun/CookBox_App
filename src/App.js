@@ -1,12 +1,15 @@
+import AuthProvider from "./contexts/AuthProvider";
 import RecipesProvider from "./contexts/RecipesProvider";
 import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
     <div>
-      <RecipesProvider>
-        <AppRouter />
-      </RecipesProvider>
+      <AuthProvider>
+        <RecipesProvider>
+          <AppRouter />
+        </RecipesProvider>
+      </AuthProvider>
     </div>
   );
 }
