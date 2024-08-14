@@ -31,7 +31,7 @@ export const SearchCard = styled.div`
 `;
 
 export const CardTitle = styled.h4`
-  height: 3rem;
+  height: 3.8rem;
   text-align: center;
 `;
 
