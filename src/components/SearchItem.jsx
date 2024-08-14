@@ -10,7 +10,10 @@ const SearchItem = ({ item }) => {
     <SearchCard>
       <CardTitle>{item.recipe.label}</CardTitle>
       <CardImage src={item.recipe.image} alt="food" />
-      <Button secondary onClick={() => navigate("/search/details")}>
+      <Button
+        secondary
+        onClick={() => navigate("/search/details", { state: { item } })}
+      >
         View Details
       </Button>
     </SearchCard>
