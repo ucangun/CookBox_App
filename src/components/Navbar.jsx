@@ -38,7 +38,7 @@ const Navbar = () => {
         >
           About
         </NavLink>
-        <Button secondary onClick={() => navigate("/login")}>
+        <Button secondary="true" onClick={() => navigate("/login")}>
           Login
         </Button>
       </Navlinks>

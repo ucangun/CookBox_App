@@ -20,7 +20,7 @@ const LoginBox = () => {
         </LoginRow>
 
         <div>
-          <Button secondary>Login</Button>
+          <Button secondary="true">Login</Button>
         </div>
       </LoginForm>
     </LoginContainer>
