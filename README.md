@@ -1,5 +1,7 @@
 # CookBox_App
 
+https://cookboxapp.netlify.app/
+
 ## Project Purpose
 
 The CookBox App is a recipe application that allows users to `search for recipes by name and category`. After logging in, users can input the name of the recipe and select a category to receive `detailed information including ingredients, calorie values, and images of the recipes`. The primary objectives of this project are to improve skills in using `Styled Components for styling`, `manage state with Context API`, and `handle routing and data fetching with React`.
@@ -68,6 +70,9 @@ The CookBox App is a recipe application that allows users to `search for recipes
 
 ## Outcome
 
+![CookBox App](https://github.com/user-attachments/assets/016f1d7d-6733-434a-b038-6dffcb598cee)
+
+
 ## Technologies Used
 
 - **ReactJS**: For building the user interface. Key React features include:
@@ -78,6 +83,7 @@ The CookBox App is a recipe application that allows users to `search for recipes
 - **Axios**: For making HTTP requests to the Edamam API.
 - **React Router**: For routing and navigation within the application.
 - **Local Storage**: Used to persist user authentication state and data, ensuring that login/logout status and user information are retained even after page refreshes.
+- - **Responsive Design**: The application is fully responsive, providing an optimal user experience on a wide range of devices, from mobile phones to desktop computers.
 - **API**: Data is fetched from the Edamam API using the following endpoint:
   - [Edamam Recipe API](https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal})
 
