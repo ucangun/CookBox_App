@@ -17,7 +17,7 @@ const AuthProvider = ({ children }) => {
     e.preventDefault();
     if (user === FAKE_USER.user && password === FAKE_USER.password) {
       setIsAuthenticated(true);
-      alert("You're successfully logged in !");
+      alert("You're successfully logged in!");
       navigate("/search");
     } else {
       alert("Invalid email adress or password");
@@ -27,7 +27,7 @@ const AuthProvider = ({ children }) => {
   const handleLogout = (e, navigate) => {
     e.preventDefault();
     setIsAuthenticated(false);
-    alert("You're successfully logged out !");
+    alert("You're successfully logged out!");
     setUser("");
     setPassword("");
     navigate("/");
