@@ -1,9 +1,8 @@
 # CookBox_App
 
-
 ## Project Purpose
-The CookBox App is a recipe application that allows users to `search for recipes by name and category`. After logging in, users can input the name of the recipe and select a category to receive `detailed information including ingredients, calorie values, and images of the recipes`. The primary objectives of this project are to improve skills in using `Styled Components for styling`, `manage state with Context API`, and `handle routing and data fetching with React`.
 
+The CookBox App is a recipe application that allows users to `search for recipes by name and category`. After logging in, users can input the name of the recipe and select a category to receive `detailed information including ingredients, calorie values, and images of the recipes`. The primary objectives of this project are to improve skills in using `Styled Components for styling`, `manage state with Context API`, and `handle routing and data fetching with React`.
 
 ## Project Structure
 
@@ -12,10 +11,10 @@ The CookBox App is a recipe application that allows users to `search for recipes
 |
 ├── public
 │     └── index.html
-├── src   
+├── src
 │    ├── assets
 │    │       └──  [images]
-│    │       
+│    │
 │    ├── components
 │    │        └── style (folder)
 │    │              ├── AboutBoxStyle.jsx
@@ -47,7 +46,7 @@ The CookBox App is a recipe application that allows users to `search for recipes
 │    │       ├── Login.jsx
 │    │       └── Search.jsx
 │    ├── router
-│    │       └── AppRouter.jsx     
+│    │       └── AppRouter.jsx
 │    ├── App.js
 │    ├── index.js
 │    └── index.css
@@ -69,8 +68,6 @@ The CookBox App is a recipe application that allows users to `search for recipes
 
 ## Outcome
 
-
-
 ## Technologies Used
 
 - **ReactJS**: For building the user interface. Key React features include:
@@ -80,9 +77,9 @@ The CookBox App is a recipe application that allows users to `search for recipes
 - **Context API**: Used for state management, including authentication and recipe data.
 - **Axios**: For making HTTP requests to the Edamam API.
 - **React Router**: For routing and navigation within the application.
+- **Local Storage**: Used to persist user authentication state and data, ensuring that login/logout status and user information are retained even after page refreshes.
 - **API**: Data is fetched from the Edamam API using the following endpoint:
   - [Edamam Recipe API](https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal})
-
 
 ### At the end of the project, will be able to;
 
