@@ -12,4 +12,17 @@ const MainButton = styled.button`
   cursor: pointer;
 `;
 
+export const DetailButton = styled.a`
+  margin-top: 2rem;
+  font-size: 1rem;
+  margin-top: auto;
+  color: orangered;
+
+  text-decoration: underline;
+  background-color: #fff;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  cursor: pointer;
+`;
+
 export default MainButton;
