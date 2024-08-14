@@ -3,8 +3,8 @@ import { createContext, useState } from "react";
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState("user@gamil.com");
+  const [password, setPassword] = useState("123456");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const FAKE_USER = {
