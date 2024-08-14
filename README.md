@@ -28,6 +28,7 @@ The CookBox App is a recipe application that allows users to `search for recipes
 │    │              ├── NavbarStyle.jsx
 │    │              ├── SearchBoxStyle.jsx
 │    │              ├── SearchResultStyle.jsx
+│    │              ├── SpinnerStyle.jsx
 │    │              └── WelcomeHeaderStyle.jsx
 │    │       ├── AboutBox.jsx
 │    │       ├── Button.jsx
@@ -37,7 +38,8 @@ The CookBox App is a recipe application that allows users to `search for recipes
 │    │       ├── Navbar.jsx
 │    │       ├── SearchBox.jsx
 │    │       ├── SearchItem.jsx
-│    │       └── SearchResult.jsx
+│    │       ├── SearchResult.jsx
+│    │       └── Spinner.jsx
 │    ├── contexts
 │    │       ├── AuthProvider.jsx
 │    │       └── RecipesProvider.jsx
