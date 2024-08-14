@@ -11,7 +11,7 @@ const SearchItem = ({ item }) => {
       <CardTitle>{item.recipe.label}</CardTitle>
       <CardImage src={item.recipe.image} alt="food" />
       <Button
-        secondary
+        secondary="true"
         onClick={() => navigate("/search/details", { state: { item } })}
       >
         View Details

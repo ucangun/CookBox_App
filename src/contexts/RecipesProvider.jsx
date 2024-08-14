@@ -16,7 +16,6 @@ const RecipesProvider = ({ children }) => {
 
     const { data } = await axios.get(url);
     setRecipes(data.hits);
-    console.log(data.hits);
   };
 
   const handleSubmit = (e) => {

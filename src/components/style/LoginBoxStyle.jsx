@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const LoginContainer = styled.div`
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
   border-radius: 0.3rem;
   padding: 2rem 1rem;
   width: 40%;

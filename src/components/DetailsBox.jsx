@@ -46,8 +46,8 @@ const DetailBox = ({ item }) => {
           <h3 style={{ marginBottom: "1rem" }}>Nutrients</h3>
           {Object.values(item.recipe.totalNutrients)
             .slice(0, 10)
-            .map((value) => (
-              <li>
+            .map((value, i) => (
+              <li key={i}>
                 {value.label}:{" "}
                 <strong>
                   {value.quantity.toFixed(1)} {value.unit}

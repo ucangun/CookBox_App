@@ -26,10 +26,8 @@ const AuthProvider = ({ children }) => {
 
   const handleLogout = (e, navigate) => {
     e.preventDefault();
-
     setIsAuthenticated(false);
     alert("You're successfully logged out !");
-
     setUser("");
     setPassword("");
     navigate("/");

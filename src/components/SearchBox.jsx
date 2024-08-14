@@ -5,10 +5,14 @@ import SearchContainer, {
   SearchSelect,
 } from "./style/SearchBoxStyle";
 import { RecipesContext } from "../contexts/RecipesProvider";
+import { AuthContext } from "../contexts/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const SearchBox = () => {
+  const navigate = useNavigate();
   const { query, setQuery, mealType, setMealType, handleSubmit } =
     useContext(RecipesContext);
+  const { isAuthenticated } = useContext(AuthContext);
   return (
     <SearchContainer>
       <SearchInput
@@ -29,7 +33,12 @@ const SearchBox = () => {
         <option value="brunch">Brunch</option>
         <option value="teatime">TeaTime</option>
       </SearchSelect>
-      <Button secondary="true" onClick={(e) => handleSubmit(e)}>
+      <Button
+        secondary="true"
+        onClick={(e) =>
+          isAuthenticated ? handleSubmit(e) : navigate("/login")
+        }
+      >
         Search
       </Button>
     </SearchContainer>
