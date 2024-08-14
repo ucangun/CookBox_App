@@ -30,7 +30,9 @@ const RecipesProvider = ({ children }) => {
     } catch (error) {
       console.error("Error fetching recipes:", error);
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
     }
 
     setQuery("");
