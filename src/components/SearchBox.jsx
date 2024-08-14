@@ -29,7 +29,7 @@ const SearchBox = () => {
         <option value="brunch">Brunch</option>
         <option value="teatime">TeaTime</option>
       </SearchSelect>
-      <Button secondary onClick={(e) => handleSubmit(e)}>
+      <Button secondary="true" onClick={(e) => handleSubmit(e)}>
         Search
       </Button>
     </SearchContainer>
