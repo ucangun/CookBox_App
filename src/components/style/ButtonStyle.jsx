@@ -19,13 +19,12 @@ const MainButton = styled.button`
 
   @media (max-width: 768px) {
     padding: ${({ secondary }) =>
-      secondary ? "0.3rem 0.6rem" : "0.6rem 1.2rem"};
+      secondary ? "0.4rem 0.8rem" : "0.6rem 1.2rem"};
     font-size: 1rem;
   }
 
   @media (max-width: 480px) {
-    padding: ${({ secondary }) =>
-      secondary ? "0.2rem 0.4rem" : "0.4rem 1rem"};
+    padding: ${({ secondary }) => (secondary ? "0.3rem .8rem" : "0.4rem 1rem")};
     font-size: 0.9rem;
   }
 `;

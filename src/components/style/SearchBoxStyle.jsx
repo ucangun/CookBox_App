@@ -6,6 +6,16 @@ const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0.3rem;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 3rem;
+  }
 `;
 
 export const SearchInput = styled.input`
@@ -17,6 +27,16 @@ export const SearchInput = styled.input`
   &:focus {
     outline: none;
   }
+
+  @media (max-width: 768px) {
+    width: 85%;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.3rem;
+    font-size: 0.95rem;
+  }
 `;
 
 export const SearchSelect = styled.select`
@@ -27,6 +47,16 @@ export const SearchSelect = styled.select`
 
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 85%;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.3rem;
+    font-size: 0.9rem;
   }
 `;
 
