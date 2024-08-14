@@ -1,17 +1,35 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState("user@gmail.com");
-  const [password, setPassword] = useState("123456");
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [user, setUser] = useState(
+    localStorage.getItem("user") || "user@gmail.com"
+  );
+  const [password, setPassword] = useState(
+    localStorage.getItem("password") || "123456"
+  );
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    !!localStorage.getItem("isAuthenticated")
+  );
 
   const FAKE_USER = {
     username: "user",
     user: "user@gmail.com",
     password: "123456",
   };
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      localStorage.setItem("user", user);
+      localStorage.setItem("password", password);
+      localStorage.setItem("isAuthenticated", true);
+    } else {
+      localStorage.removeItem("user");
+      localStorage.removeItem("password");
+      localStorage.removeItem("isAuthenticated");
+    }
+  }, [isAuthenticated, user, password]);
 
   const handleLogin = (e, navigate) => {
     e.preventDefault();
