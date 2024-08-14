@@ -6,7 +6,7 @@ const Nav = styled.nav`
   align-items: center;
 `;
 
-export const Navlink = styled(Nav)`
+export const Navlinks = styled(Nav)`
   gap: 2rem;
   font-size: 1.2rem;
   color: #fff;

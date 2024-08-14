@@ -9,7 +9,13 @@ const MainButton = styled.button`
   border: none;
   border-radius: 0.3rem;
   font-size: 1.2rem;
+  transition: all 0.5s;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({ secondary }) => (secondary ? "#fff" : "#ff4500")};
+    color: ${({ secondary }) => (secondary ? "#ff4500" : "#fff")};
+  }
 `;
 
 export const DetailButton = styled.a`

@@ -1,6 +1,6 @@
-import Nav, { Navlink } from "./style/NavbarStyle";
+import Nav, { Navlinks } from "./style/NavbarStyle";
 import Logo from "./style/LogoStyle";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/images/Logo.png";
 import Button from "./Button";
 
@@ -10,14 +10,38 @@ const Navbar = () => {
   return (
     <Nav>
       <Logo src={logo} alt="logo" onClick={() => navigate("/")} />
-      <Navlink>
-        <p onClick={() => navigate("/")}>Home</p>
-        <p onClick={() => navigate("/search")}>Search</p>
-        <p onClick={() => navigate("/about")}>About</p>
+      <Navlinks>
+        <NavLink
+          to="/"
+          style={({ isActive }) => ({
+            color: isActive ? "orangered" : "inherit",
+            textDecoration: "none",
+          })}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/search"
+          style={({ isActive }) => ({
+            color: isActive ? "orangered" : "inherit",
+            textDecoration: "none",
+          })}
+        >
+          Search
+        </NavLink>
+        <NavLink
+          to="/about"
+          style={({ isActive }) => ({
+            color: isActive ? "orangered" : "inherit",
+            textDecoration: "none",
+          })}
+        >
+          About
+        </NavLink>
         <Button secondary onClick={() => navigate("/login")}>
           Login
         </Button>
-      </Navlink>
+      </Navlinks>
     </Nav>
   );
 };
