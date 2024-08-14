@@ -25,7 +25,7 @@ const SearchBox = () => {
         value={mealType}
         onChange={(e) => setMealType(e.target.value)}
       >
-        {/* <option value="">Search Category</option> */}
+        <option value="">Search Category</option>
         <option value="breakfast">Breakfast</option>
         <option value="lunch">Lunch</option>
         <option value="dinner">Dinner</option>

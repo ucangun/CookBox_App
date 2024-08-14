@@ -24,6 +24,8 @@ const RecipesProvider = ({ children }) => {
       alert("Please enter a recipe name and select a meal category");
     } else {
       getRecipes();
+      setQuery("");
+      setMealType("");
     }
   };
 
