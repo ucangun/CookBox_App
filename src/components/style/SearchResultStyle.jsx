@@ -4,6 +4,7 @@ const SearchResultContainer = styled.div`
   align-self: center;
   margin: 3rem 0 0 0;
   width: 90%;
+  max-width: 70rem;
   padding: 1.5rem 1rem;
   border-radius: 1rem;
   background-color: rgba(0, 0, 0, 0.05);
@@ -41,7 +42,7 @@ export const CardImage = styled.img`
   border-radius: 1rem;
   object-fit: cover;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.4s;
 
   &:hover {
     transform: scale(1.02);
