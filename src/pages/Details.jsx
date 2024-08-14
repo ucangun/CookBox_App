@@ -6,7 +6,7 @@ import DetailBox from "../components/DetailsBox";
 
 const Details = () => {
   const location = useLocation();
-  const { item } = location.state;
+  const { item } = location.state || {};
 
   return (
     <Container>

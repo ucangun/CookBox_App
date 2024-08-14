@@ -3,7 +3,7 @@ import Logo from "./style/LogoStyle";
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/images/Logo.png";
 import Button from "./Button";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../contexts/AuthProvider";
 
 const Navbar = () => {
